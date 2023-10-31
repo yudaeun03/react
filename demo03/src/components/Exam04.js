@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+// React 라이브러리에서 useEffect와 useState를 가져온다
 
 //function Exam04(){}
 const Exam04 = ()=>{
@@ -15,12 +16,13 @@ const Exam04 = ()=>{
     useEffect(()=>{
         setLength(content.length);
     }, [content]);
-
+    // content의 상태가 변경될 때 마다 호출되는 함수를 정의
+    // content의 길이를 계산, length의 상태를 업데이트한다
     return (
         <div className="container-fluid">
-            <div className="row">r
+            <div className="row">
                 <div className="col-md-10 offset-md-1">
-
+                    
                     <div className="row">
                         <div className="col">
                             <h1>네 번째 예제</h1>                    
@@ -39,6 +41,8 @@ const Exam04 = ()=>{
                                 value={content} onChange={e=>setContent(e.target.value)}></textarea>
                         </div>
                     </div>
+
+                
 
                     <div className="row mt-2">
                         <div className="col text-end">

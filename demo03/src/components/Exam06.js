@@ -8,7 +8,9 @@ const Exam06 = ()=>{
     //상태를 하나의 객체로 관리할 때
     const [info, setInfo] = useState({
         alias : "",
+        // 별명 : ""
         gender : "남자"
+        // 성별 : "남자"
     });
 
     //function changeInfo(e){}
